@@ -1,0 +1,67 @@
+.title {
+  font-family: Cera Pro;
+  font-style: normal;
+  font-weight: bold;
+  &_h1 {
+    font-size: 42px;
+    line-height: 100%;
+    letter-spacing: 0.02em;
+  }
+  &_h2 {
+    font-size: 32px;
+    line-height: 40px;
+  }
+  &_h4 {
+    font-size: 22px;
+    line-height: 28px;
+    letter-spacing: 0.03em;
+  }
+}
+.subtitle {
+  font-size: 13px;
+  line-height: 18px;
+}
+
+@media (min-width: 768px) {
+}
+@media (min-width: 960px) {
+  .title_h1 {
+    font-size: 48px;
+    line-height: 100%;
+  }
+  .title_h2 {
+    font-size: 36px;
+    line-height: 45px;
+  }
+  .subtitle {
+    font-size: 14px;
+    line-height: 18px;
+  }
+  .title_h4 {
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 28px;
+    letter-spacing: 0.07em;
+    color: #000000;
+  }
+}
+@media (min-width: 1440px) {
+  .title_h1 {
+    font-size: 72px;
+  }
+  .title_h2 {
+    font-size: 56px;
+    line-height: 70px;
+  }
+  .title_h4 {
+    font-size: 30px;
+    line-height: 38px;
+    letter-spacing: 0.03em;
+  }
+  .subtitle {
+    font-size: 16px;
+    line-height: 18px;
+  }
+}
+@media (min-width: 1920px) {
+}

@@ -1,0 +1,35 @@
+@import "./styles/normalize.css";
+@import "./styles/fonts.scss";
+
+@import "./styles/grid.scss";
+@import "./styles/text.scss";
+@import "./styles/title.scss";
+@import "./styles/menu.scss";
+@import "./styles/dropdown.scss";
+@import "./styles/networks-list.scss";
+@import "./styles/company-logo.scss";
+
+@import "./styles/header.scss";
+@import "./styles/color-block.scss";
+@import "./styles/footer.scss";
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Cera Pro", sans-serif;
+}
+
+@media (min-width: 768px) {
+    
+}
+@media (min-width: 960px) {
+  
+}
+@media (min-width: 1440px) {
+  
+}
+@media (min-width: 1920px) {
+  
+}

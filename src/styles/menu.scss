@@ -1,0 +1,52 @@
+.menu {
+  &-btn {
+    width: 20px;
+    height: 20px;
+    padding: 3px 1px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: transparent;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    .line {
+      width: 18px;
+      height: 1px;
+      margin-top: -1px;
+      background: #000;
+      display: block;
+      transition: all 0.3s;
+      &::after,
+      &::before {
+        content: "";
+        display: block;
+        width: 18px;
+        height: 1px;
+        background: #000;
+        transition: all 0.3s;
+      }
+      &::after {
+        transform: translateY(-7px);
+      }
+      &::before {
+        transform: translateY(6px);
+      }
+    }
+
+    &:focus,
+    &:active {
+      .line {
+        background: none;
+        &::after {
+          transform: translateY(-1px) rotate(-135deg);
+          background: #9A0034;
+        }
+        &::before {
+          transform: translateY(0) rotate(135deg);
+          background: #9A0034;
+        }
+      }
+    }
+  }
+}

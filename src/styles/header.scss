@@ -1,0 +1,252 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  height: 455px;
+  position: relative;
+  &__info {
+    width: 165px;
+    background: rgba(255, 255, 255, 0.85);
+    backdrop-filter: blur(40px);
+  }
+
+  &__bg {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    object-fit: cover;
+    z-index: 0;
+  }
+
+  &__logo,
+  .title,
+  .text {
+    display: none;
+  }
+
+  &__nav-block {
+    width: 100%;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 15px;
+    position: absolute;
+    z-index: 1000;
+    bottom: 28px;
+    .wrap {
+      width: 143px;
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+
+  &__side-info {
+    width: 70px;
+    background: #fff;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__company-logo {
+    position: absolute;
+    width: 49px;
+    top: 32px;
+    left: 7px;
+  }
+
+  &__product-info-wrap {
+    margin-top: -16px;
+    margin-left: 23px;
+    display: flex;
+  }
+
+  &__product-name {
+    display: block;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 18px;
+    color: #000000;
+    min-width: 80px;
+    margin-right: 40px;
+    letter-spacing: -0.15px;
+  }
+
+  &__product-year {
+    display: block;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 18px;
+  }
+}
+@media (min-width: 768px) {
+  .header {
+    height: 457px;
+    &__info {
+      width: 399px;
+      align-items: none;
+      padding: 30px 40px;
+    }
+    &__side-info {
+      width: 129px;
+    }
+    &__nav-block {
+      width: 264px;
+      padding: 0;
+      left: 40px;
+      bottom: 30px;
+      .wrap {
+        width: 174px;
+      }
+    }
+    &__logo,
+    .title,
+    .text {
+      display: block;
+    }
+    .title {
+      margin-top: 55px;
+    }
+    .text {
+      width: 90px;
+      margin-top: 63px;
+      margin-left: -29px;
+    }
+
+    &__company-logo {
+      top: 31px;
+      left: 43px;
+    }
+    &__product-info-wrap {
+      margin-top: -2px;
+      margin-left: 33px;
+      font-size: 16px;
+    }
+    &__product-name {
+      width: 120px;
+      font-size: 16px;
+      margin-right: 0;
+    }
+    &__product-year {
+      font-size: 16px;
+    }
+  }
+}
+@media (min-width: 960px) {
+  .header {
+    height: 530px;
+    &__info {
+      padding: 30px 98px;
+      width: 465px;
+    }
+
+    &__side-info {
+      width: 221px;
+    }
+
+    &__nav-block {
+      left: 98px;
+      bottom: 31px;
+    }
+    &__logo {
+      margin-top: -1px;
+      svg {
+        width: 100px;
+      }
+    }
+    .title_h1 {
+      margin-top: 71px;
+    }
+    .text {
+      margin-top: 49px;
+    }
+    &__company-logo {
+      width: 60px;
+      left: 70px;
+      top: 30px;
+    }
+    &__product-info-wrap {
+      margin-top: 1px;
+      margin-left: 20px;
+    }
+  }
+}
+@media (min-width: 1440px) {
+  .header {
+    height: 803px;
+    &__info {
+      width: 732px;
+      padding: 30px 139px;
+    }
+    &__side-info {
+      width: 316px;
+    }
+    &__nav-block {
+      width: 422px;
+      bottom: 62px;
+      left: 139px;
+      .wrap {
+        width: 190px;
+      }
+    }
+    &__logo {
+      svg {
+        width: 120px;
+      }
+    }
+    .title_h1 {
+      margin-top: 145px;
+      line-height: 72px;
+    }
+    .text {
+      margin-top: 64px;
+      margin-left: -32px;
+    }
+    &__company-logo {
+      width: 71px;
+      left: 113px;
+      top: 32px;
+    }
+    &__product-info-wrap {
+      margin-top: -76px;
+      margin-left: 28px;
+    }
+  }
+}
+@media (min-width: 1920px) {
+  .header {
+    height: 1055px;
+    &__info {
+      width: 855px;
+      padding: 50px 255px;
+    }
+    &__side-info {
+      width: 465px;
+    }
+    &__nav-block {
+      width: 504px;
+      left: 255px;
+      bottom: 50px;
+      .wrap {
+        width: 195px;
+      }
+    }
+    &__company-logo {
+      left: 141px;
+      top: 51px;
+    }
+    &__product-info-wrap {
+      margin-top: 0px;
+      margin-left: -63px;
+    }
+    .title_h1 {
+      margin-top: 211px;
+    }
+    .text {
+      letter-spacing: 0.05em;
+    }
+  }
+}
